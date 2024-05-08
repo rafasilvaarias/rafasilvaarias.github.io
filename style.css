@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "AnkhSanctuary";
+  src: url(./fonts/AnkhSanctuary.ttf);
+}
+
+@font-face {
+  font-family: "DiscoEverydayValueRegular";
+  src: url(./fonts/DiscoEverydayValueRegular.ttf);
+}
+
+@font-face {
+  font-family: "Funkotronic";
+  src: url(./fonts/Funkotronic.ttf);
+}
+
+@font-face {
+  font-family: "RemeeqtrialRegular";
+  src: url(./fonts/RemeeqtrialRegular.ttf);
+}
+
+@font-face {
+  font-family: "Robot9000Italic";
+  src: url(./fonts/Robot9000Italic.ttf);
+}
+
+@font-face {
+  font-family: "Starseeds";
+  src: url(./fonts/StarseedsPersonalUseRegular.ttf);
+}
+
+@font-face {
+  font-family: "TetrisHolloww";
+  src: url(./fonts/TetrisHolloww.ttf);
+}
+
+@font-face {
+  font-family: "UnknownGalaxy";
+  src: url(./fonts/UnknownGalaxy.ttf);
+}
+
+@font-face {
+  font-family: "Heyam";
+  src: url(./fonts/Heyam.ttf);
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/fundo_quarto_150.jpg');
+  background-size: 100vw 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+ol {
+  margin: 0px;
+  /*font-family: sans-serif;*/
+}
+
+input:focus{
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
+

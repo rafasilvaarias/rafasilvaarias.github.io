@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPACE NET</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mainComputer.css">
+    <link rel="stylesheet" type="text/css" href="sideComputer.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+    
+  </head>
+
+  <body>
+    <script src="./js/sketch.js"></script>
+
+    <!-- Main computer -->
+    <div id="mainComputerScreen">
+
+      <h1 id="profileName">Andrew<br>Callahan</h1>
+      <div id="canvasDiv"></div>
+      
+      <div id="profileInfo">
+        <p id="status">
+          <span id="statusContent">Feeling utterly delighted today! 🌸✨ Just frolicking through this whimsical world with a skip in my step and a twinkle in my eye! 🎉</span>
+        </p>
+        <ul id="info">
+          <li id="age"> <img src="./icons/age.png"> 24yrs</li>
+          <li id="planetOfOrigin"> <img src="./icons/planetOfOrigin.png"> Globglart</li>
+          <li id="gender"> <img src="./icons/ooblong.png"> Ooblong</li>
+          <li id="interests"> <img src="./icons/hobbies.png"> Basketball, Music and Drugs</li>
+        </ul>
+      </div>
+
+      <img id="computerFrame" src="./images/mainCoumputerFrame2.png">
+      <img id="stand1" src="./images/stand1.png">
+
+    </div>
+
+
+    <!-- Side computer -->
+    <div id="sideComputerScreen">
+
+      <div id="tabs">
+        <button id="searchPageButton" class="selected"> Search</button>
+        <button id="friendsPageButton"> Friends</button>
+      </div>
+
+      <div id="searchForm">
+      <input type="text" id="inputName" placeholder="Search a friend...">
+      <button id="searchButton"><image src="./icons/search.png"></image></button>
+      </div>
+
+      <ul>
+        <li id="namePerson1"><a href="homepage.html?Andrew+Callahan">Andrew Callahan</a> <span class="heart">♡</span></li>
+        <li id="namePerson2"><a href="homepage.html?Zzynx+Fynch">Zzynx Fynch</a> <span class="heart">♡</span></li>
+        <li id="namePerson3"><a href="homepage.html?Yioming+Luau">Yioming Luau</a> <span class="heart">♡</span></li>
+        <li id="namePerson4"><a href="homepage.html?Iguana+Johnson">Iguana Johnson</a> <span class="heart">♡</span></li>
+        <li id="namePerson5"><a href="homepage.html?Pedro+Barrymore">Pedro Barrymore</a> <span class="heart">♡</span></li>
+        <li id="namePerson6"><a href="homepage.html?E.T.">E.T.</a> <span class="heart">♡</span></li>
+        <li id="namePerson7"><a href="homepage.html?Armando+Quintinho">Armando Quintinho</a> <span class="heart">♡</span></li>
+        <li id="namePerson8"><a href="homepage.html?Human+Notanalien">Human Notanalien</a> <span class="heart">♡</span></li>
+        <li id="namePerson9"><a href="homepage.html?XXhyumm+UwU">XXhyumm UwU</a> <span class="heart">♡</span></li>
+        <li id="namePerson10"><a href="homepage.html?Nya+Ichinisan">Nya Ichinisan</a> <span class="heart">♡</span></li>
+      </ul>
+      </ul>
+      </ul>
+      <img id="secondScreen" src="./images/ecra2.png">
+      <img id="stand2" src="./images/stand2.png">
+    </div>
+
+
+  </body>
+  <script src="./js/arrays.js"></script>
+  <script src="./js/screenPlacement.js"></script>
+  <script src="./js/tabs.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/profile.js"></script>
+  <script src="./js/infoPlace.js"></script>
+  <script src="./js/friends.js"></script>
+  <script src="./js/likeInteraction.js"></script>
+  <script src="./js/assets.js"></script>
+</html>

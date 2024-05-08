@@ -1,0 +1,90 @@
+#mainComputerScreen {
+  width: 720px;
+  height: 720px;
+  position: absolute;
+}
+
+#canvasDiv {
+  width: 265px;
+  position: absolute;
+  left: 227.5px;
+  right: 227.5px;
+  top: 350px;
+}
+
+#computerFrame {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 720px;
+  height: 720px;
+  z-index: -1;
+}
+
+#stand1{
+  position: absolute;
+  left: 290px;
+  top: 720px;
+  width: 150px;
+  height: 200px;
+  
+}
+
+#profileName {
+  color: rgb(228, 228, 236);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 240px;
+  font-family: "Heyam", Heyam;
+  font-size: 40px;
+}
+
+#profileInfo {
+  width: 60%;
+  margin-left: 10%;
+  height: 140px;
+  position: absolute;
+  bottom: 10px;
+  font-family: "AnkhSanctuary";
+  font-size: 18px;
+  margin-bottom: -15px;
+}
+
+
+#profileInfo > #status {
+  position: absolute;
+  width: 30%;
+}
+
+#status{
+  left: 20px;
+}
+
+#profileInfo > #info {
+  position: absolute;
+  right: -150px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#profileInfo>*{
+  padding: 10px;
+  color: rgb(228, 228, 236);
+}
+
+
+canvas {
+  display: block;
+}
+
+#mainComputerScreen ul{
+  margin: 0px;
+  list-style-type: none;
+}
+
+li img{
+  height: 20px;
+}
+

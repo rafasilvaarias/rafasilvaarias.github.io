@@ -1,0 +1,121 @@
+#sideComputerScreen {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+}
+
+#stand2{
+    position: absolute;
+    top: 518px;
+    left: 50px;
+    width: 200px;
+    height: 210px;
+}
+#sideComputerScreen button {
+    color: rgb(51, 254, 217);
+    text-decoration: none;
+    font-family: "Heyam";
+    line-height: 20px;
+    font-size: 20px;
+}
+
+#sideComputerScreen li,
+#sideComputerScreen a{
+    color: rgb(51, 254, 217);
+    text-decoration: none;
+    font-family: "AnkhSanctuary";
+    line-height: 20px;
+    font-size: 20px;
+}
+
+#sideComputerScreen button.selected {
+    background: rgb(51, 254, 217);
+    color: #0d2020;
+    border-radius: 13px;    
+}
+
+#tabs {
+    display: flex;
+    width: 99.6%;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    margin-left:.3%;
+}
+
+#sideComputerScreen ul {
+    list-style-type: none;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+#sideComputerScreen li {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+#tabs>* {
+    width: 50%;
+    height: 40px;
+}
+
+#searchButton {
+    border: none;
+}
+
+#searchButton img {
+    width: 100%;
+
+}
+
+#inputName {
+    font-family: "Heyam";
+    width: 90%;
+    padding: 0px;
+    margin-left: 22px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+#searchButton {
+    width: 40px;
+    cursor: default;
+    margin-right: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#searchForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#searchForm>* {
+    height: 40px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.heartSelected {
+    fill: red;
+}
+
+#sideComputerScreen li span {
+    cursor: pointer;
+}
+
+#secondScreen {
+    position: absolute;
+    left: -15px;
+    top: -18px;
+    width: 330px;
+    height: 536px;
+    z-index: -1;
+}
