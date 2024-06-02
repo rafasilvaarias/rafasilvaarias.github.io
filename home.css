@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 160%;
   height: auto;
   
 }
@@ -17,7 +17,7 @@ ul{
   font-family: "Heyam";
   text-align: center;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 60px;
   color:white;
 }
 
@@ -25,9 +25,35 @@ a{
   font-family: "Heyam";
   text-align: center;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 57px;
+  color:#D17EAF;
+  padding-top: 5px;
+}
+
+a:hover{
   color:#903F97;
-  padding-top: 15%;
+}
+
+#first{
+  position: absolute;
+  bottom: 2%;
+  left:10px;
+  font-family: "Robot9000Italic";
+  text-align: left;
+  width: 29%;
+  text-decoration: none;
+  font-size: 13px;
+  color: #445189;
+}
+
+#second{
+  font-family: "Robot9000Italic";
+  text-align: center;
+  width: 15%;
+  text-decoration: none;
+  font-size: 16px;
+  color: #D17EAF;
+  padding-top: 8%;
 }
 
 #gradient {

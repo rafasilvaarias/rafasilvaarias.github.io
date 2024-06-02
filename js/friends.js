@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function checkHearts() {
     for (let i = 0; i < sideComputerLi.length; i++) {
         for (let a = 0; a < friends.length; a++) {
-            console.log(sideComputerLi[i].getElementsByTagName('a')[0].innerHTML + ',' + friends[a]);
+            //console.log(sideComputerLi[i].getElementsByTagName('a')[0].innerHTML + ',' + friends[a]);
             if (sideComputerLi[i].getElementsByTagName('a')[0].innerHTML == friends[a]){
-                console.log('changing');
+                //console.log('changing');
                 sideComputerLi[i].getElementsByTagName('span')[0].innerHTML = '❤︎';
                 break;
             } else {

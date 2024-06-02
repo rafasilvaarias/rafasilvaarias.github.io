@@ -1,4 +1,3 @@
-//s
 const planets = [
   "Aeloria",
   "Belerophon",
@@ -274,7 +273,6 @@ const statuses = [
     "😴 Sleeping",
     "📱 Busy on phone",
     "🍵 Taking a break",
-    "🚀 Exploring the universe",
     "🎧 Listening to music",
     "📚 Studying",
     "🎮 Gaming",
@@ -285,7 +283,6 @@ const statuses = [
     "⚽ Playing sports",
     "🌙 Dreaming",
     "🌟 Feeling inspired",
-    "💡 Brainstorming",
     "📝 Writing",
     "🏖️ On vacation",
     "🏃‍♂️ Exercising",
@@ -295,19 +292,14 @@ const statuses = [
     "🔥 Feeling motivated",
     "🎭 Acting",
     "🍦 Indulging",
-    "🌈 Feeling optimistic",
     "🎈 Celebrating",
-    "🌌 Lost in thought",
     "💤 Resting",
     "🛌 Taking a nap",
     "🧩 Solving puzzles",
-    "🔮 Predicting the future",
     "🎤 Singing",
     "🧳 Traveling",
     "🍹 Relaxing",
     "🎬 Directing",
-    "📻 Listening to podcasts",
-    "🔍 Searching for answers",
     "📈 Analyzing data",
     "💬 Chatting",
     "🔒 Offline",
@@ -453,9 +445,9 @@ const statuses = [
       firstNames.push(newName1);
       lastNames.push(newName2);
     }
-    console.log("Alien names generated");
-    console.log(firstNames);
-    console.log(lastNames);
+    //console.log("Alien names generated");
+    //console.log(firstNames);
+    //console.log(lastNames);
   });
   // Generate alien names (10000 names)
   

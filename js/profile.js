@@ -93,3 +93,11 @@ setTimeout(function() {
         console.log("saving assets");       
     }
 }, 600);
+
+document.getElementById("downloadCanvas").addEventListener("click", function() {
+    console.log("clicked");
+    saveCanvas(person.name, "png");
+  });
+
+
+  

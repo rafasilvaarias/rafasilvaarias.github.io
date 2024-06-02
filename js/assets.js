@@ -22,6 +22,8 @@ let availablePixels;
 let availablePixelsTable = [];
 let tableHeight;
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   fetch("../assetsCharacters/assetsCharacters.csv")
     .then((response) => response.text())
@@ -30,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .split("\n")
         .map((row) => row.split(",").map((value) => value.trim()));
       assetsCharacters = parsedData;
-      console.log("fetchingCharacterAssets");
-      console.log(assetsCharacters);
+      //console.log("fetchingCharacterAssets");
+      //console.log(assetsCharacters);
     })
     .catch((error) => {
-      console.error("Error:", error);
+      //console.error("Error:", error);
     });
 
   fetch("../assetsRoom/assetsRoom.csv")
@@ -44,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .split("\n")
         .map((row) => row.split(",").map((value) => value.trim()));
       assetsRoom = parsedData;
-      console.log("fetchingRoomAssets");
-      console.log(assetsRoom);
+      //console.log("fetchingRoomAssets");
+      //console.log(assetsRoom);
     })
     .catch((error) => {
-      console.error("Error:", error);
+      //console.error("Error:", error);
     });
 });
 
@@ -154,7 +156,7 @@ function setAssets() {
 
       let xValue = Math.random() * (184 - subXValue) + (40 + subXValue);
       let yValue = Math.random() * (152 - subYValue) + (35 + subYValue);
-      console.log("xValue: " + xValue, "yValue: " + yValue);
+      //console.log("xValue: " + xValue, "yValue: " + yValue);
 
       roomAssets.push([wall[index][0], xValue, yValue]);
     };
@@ -197,7 +199,7 @@ function setAssets() {
             lastPixel * 10,
             floorLine + yOffset,
           ]);
-          console.log("table added:" + table[index][0]);
+          //console.log("table added:" + table[index][0]);
           for (let i = firstPixel; i < lastPixel; i++) {
             availablePixels.splice(availablePixels.indexOf(i), 1);
             if (i != firstPixel && i != lastPixel) {
@@ -209,8 +211,8 @@ function setAssets() {
               tableHeight = drawerTableHeight;
             }
           }
-          console.log("availablePixelsTable");
-          console.log(availablePixelsTable);
+          //console.log("availablePixelsTable");
+          //console.log(availablePixelsTable);
         }
       }
     };
@@ -221,11 +223,11 @@ function setAssets() {
   const nrFloor = Math.floor(Math.random() * 100);
 
   for (let i = 0; i < nrFloor; i++) {
-    console.log("floornr"+nrFloor);
+    //console.log("floornr"+nrFloor);
     let randomNum = Math.random() ** 1;
     
     let index = Math.floor(randomNum * floor.length);
-    console.log("index"+index);
+    //console.log("index"+index);
     let img = new Image();
     img.src = "../assetsRoom/" + floor[index][0];
     img.onload = function () {
@@ -268,18 +270,23 @@ function setAssets() {
     };
   }
 
-  console.log("defined room assets!");
-  console.log(roomAssets);
+  //log("defined room assets!");
+  //console.log(roomAssets);
   //CHARACTER ASSETS
 
   for (let i = 0; i < separatedCharacterAssets.length; i++) {
     let randomNum = Math.random() ** 5;
     let index = Math.floor(randomNum * separatedCharacterAssets[i].length);
     profileAssets.push([separatedCharacterAssets[i][index][0], 0, 0]);
+
+    if (i == 3) {
+      console.log("eyes added");
+      profileAssets.push([separatedCharacterAssets[i][index][0].replace('.png', '_closed.png'), 0, 0]);
+    }
   }
 
-  console.log("defined profile assets!");
-  console.log(profileAssets);
+  //console.log("defined profile assets!");
+  //console.log(profileAssets);
 }
 
 function checkPixel(firstPixel, lastPixel, array) {
@@ -293,7 +300,7 @@ function checkPixel(firstPixel, lastPixel, array) {
       break;
     }
   }
-  console.log("checkPixel: " + boolean);
+  //console.log("checkPixel: " + boolean);
   return boolean;
 }
 

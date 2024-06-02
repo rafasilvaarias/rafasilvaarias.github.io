@@ -19,7 +19,7 @@ for (let i = 0; i < hearts.length; i++) {
       friends.splice(friends.indexOf(heartedPersonName), 1);
     }
 
-    console.log(friends);
+    //console.log(friends);
     localStorage.setItem('friends', JSON.stringify(friends));
   });
 }

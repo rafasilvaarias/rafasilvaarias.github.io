@@ -4,6 +4,11 @@ let imagePathsCharacter = [];
 let imagesRoom = [];
 let imagePathsRoom = [];
 
+let randomTimeToBlink = Math.floor(Math.random() * 24*5 + 10);
+let time = 1;
+
+let skipNumber = 4;
+
 
 function preload() {
   // Simulate asynchronous data loading
@@ -22,12 +27,12 @@ function preload() {
         imagesCharacter[i] = loadImage(imagePathsCharacter[i]);
       }
 
-      console.log("characterAssets paths" + imagePathsCharacter);
-      console.log("loaded character assets in p5.js" + imagesCharacter)
+      //console.log("characterAssets paths" + imagePathsCharacter);
+      //console.log("loaded character assets in p5.js" + imagesCharacter)
 
       //////ROOM ASSETS
       for (let i = 0; i < roomAssets.length; i++) {
-        console.log("setting path: " + "./assetsRoom/"+roomAssets[i][0]);
+        //console.log("setting path: " + "./assetsRoom/"+roomAssets[i][0]);
         imagePathsRoom[i] = "./assetsRoom/"+roomAssets[i][0];
       }
 
@@ -35,8 +40,8 @@ function preload() {
         imagesRoom[i] = loadImage(imagePathsRoom[i]);
       }
 
-      console.log("roomAssets paths" + imagePathsRoom)
-      console.log("loaded room assets in p5.js" + imagesRoom)
+      //console.log("roomAssets paths" + imagePathsRoom)
+      //console.log("loaded room assets in p5.js" + imagesRoom)
 
     }, 600); // Adjust timeout as needed
   });
@@ -45,6 +50,7 @@ function preload() {
 function setup() {
   const myCanvas = createCanvas(265, 220);
   myCanvas.parent("canvasDiv");
+  frameRate(24);
 }
 
 function draw() {
@@ -69,7 +75,30 @@ function draw() {
     
   }
 
-  for (let i = 0; i < imagesCharacter.length; i++) {
-    image(imagesCharacter[i], profileAssets[i][1], profileAssets[i][2], width, height);
+  time++;
+
+  const closedEyes = 5;
+
+  if (time % randomTimeToBlink < closedEyes) {
+    skipNumber = 3;
+    if (time % randomTimeToBlink == closedEyes-1) {
+      randomTimeToBlink = Math.floor(Math.random() * 24*5 + closedEyes+1);
+      console.log("randomTimeToBlink: "+randomTimeToBlink)
+    }
+  } else {
+    skipNumber = 4;
   }
+
+  for (let i = 0; i < imagesCharacter.length; i++) {
+    if (i == skipNumber) {
+
+    } else {
+      image(imagesCharacter[i], profileAssets[i][1], profileAssets[i][2], width, height);
+    }
+   
+  }
+
+  
 }
+
+

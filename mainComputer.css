@@ -10,6 +10,7 @@
   left: 227.5px;
   right: 227.5px;
   top: 350px;
+  background-color: black;
 }
 
 #computerFrame {
@@ -38,33 +39,46 @@
   top: 240px;
   font-family: "Heyam", Heyam;
   font-size: 40px;
+  -webkit-text-stroke: 0.3px black;
 }
 
 #profileInfo {
-  width: 60%;
-  margin-left: 10%;
+  width: 45%;
+  margin-left: 4%;
   height: 140px;
   position: absolute;
-  bottom: 10px;
+  bottom: -15px;
   font-family: "AnkhSanctuary";
-  font-size: 18px;
-  margin-bottom: -15px;
+  font-size: 15px;
+
 }
 
-
-#profileInfo > #status {
+#personalityIndicator{
+  color:rgb(228, 228, 236);
   position: absolute;
-  width: 30%;
+  top: 460px;
+  left: 172px;
+  font-size: 13px;
+  font-family: "Heyam";
+  -webkit-text-stroke: 0.3px black;
 }
 
-#status{
-  left: 20px;
-}
 
-#profileInfo > #info {
+#status {
   position: absolute;
-  right: -150px;
-  width: 80%;
+  width: 19%;
+  top: -95px;
+  left: 105px;
+  text-align: right;
+  font-size: 12px;
+}
+
+#info {
+  top: -15px;
+  width: 130px;
+  position: absolute;
+  right: -143px;
+  width: 78%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -85,6 +99,31 @@ canvas {
 }
 
 li img{
-  height: 20px;
+  height: 17px;
 }
 
+li {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+#liveFrame {
+  position: absolute;
+  left: 223px;
+  width: 274px;
+  top: 340px;
+  
+  z-index: 1;
+}
+
+#downloadCanvas{
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  bottom: 150px;
+  right: 180px;
+}
